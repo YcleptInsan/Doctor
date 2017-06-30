@@ -1,13 +1,15 @@
-const Doctor = require('./../js/doctor.js');
+var Doctor = require('./../js/doctor.js');
 
-var displayDoctors = function (medicalIssue, firstName, lastName, title, bio) { $('#showDoctors').append('<li> firstName + " " + lastName + " " + title + " " bio + " " + </li> ');
+var displayDoctors = function (medicalIssue, firstName, lastName, title, bio) { $('#showDoctors').append('<li> + firstName + " " + lastName + " " + title + " " bio + " " + <br> </li>');
 };
 $(() => {
+
+  var doctor = new Doctor();
+
   $("#search-button").click(function() {
-    var doctor = new Doctor();
+    $("#showDoctors").empty();
     var medicalIssue = $("#user-search").val();
     $("#user-search").val("");
     doctor.getDoctors(medicalIssue, displayDoctors);
-    console.log(medicalIssue);
   });
 });
