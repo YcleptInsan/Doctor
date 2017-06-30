@@ -57,11 +57,11 @@ Two installations necessary for SASS:
 ## Known Bugs
 
 
-# Additional Notes
+## Additional Notes
 * In the JS folder there is an example module exported, and the -interface file using it. Feel free to use these as a template, but should be replaced and the files renamed.
 
 
-# Support and contact details
+## Support and contact details
 
 If you have any issues or have questions, ideas, concerns, or contributions please contact the contributor through Github.
 
