@@ -1,4 +1,4 @@
-var ExampleModule = require('./../js/scripts.js').exampleModule;
+const apiKey = require('./../.env').apiKey;
 
 
 $(document).ready(function() {
