@@ -1,10 +1,9 @@
-//business logic stuff for a particular module
-var ExampleModule = function(args) {
-  this.args = args; //to be replaced with constructor arguments
+function Doctors() {
+
+}
+
+Doctors.prototype.getDoctors = function () {
+  console.log("you got the related doctors");
 };
 
-ExampleModule.prototype.examplePrototype = function() {
-  return `this is an example prototype method`;
-};
-
-exports.exampleModule = ExampleModule;
+exports.doctorModule = Doctors;
