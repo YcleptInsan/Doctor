@@ -1,14 +1,14 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
-var displayDoctor = function(medicalIssue, firstName, lastName, title, bio) {
-    $('.showDoctors').append('<li>' + '"><br><h4>'+ firstName + " " + lastName + "," + title + "</h4>" + bio + "</li><br><hr>");
+var displayDoctors = function(medicalIssue, firstName, lastName, title, bio) {
+    $('.showDoctors').append('<p>' + '<br><h4>'+ firstName + " " + lastName + "," + title + "</h4>" + bio + "</p><br><hr>");
 };
 $(document).ready(function() {
   var doctor = new Doctor();
   $('#search-button').click(function() {
     $(".showDoctors" ).empty();
-    var medicalIssue = $('#issue').val();
+    var medicalIssue = $('#user-search').val();
     $('#user-search').val("");
-    doctor.getDoctor(medicalIssue, displayDoctor);
+    doctor.getDoctor(medicalIssue, displayDoctors);
   });
 });
